@@ -1,0 +1,1130 @@
+
+
+
+<!doctype html>
+
+<html lang="en" class="newLayout ">
+<!-- The AppSheet website and AppSheet apps make use of open source software subject to the licenses and copyright notices at https://www.appsheet.com/oss/notices -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-itunes-app" content="app-id=732548900" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Create App Shortcut - AppSheet</title>
+
+        <meta name="description" content="Learn how to make mobile apps for iPhone, Android, and web.">
+
+
+    <meta name="author" content="AppSheet" />
+    <meta name="google-site-verification" content="97jAB4aUdRiLxKkCyBUhJnpDEWTQAJ6tOzUKFwE1p8w" />
+    <meta name="google-site-verification" content="qPkt9TxKqz8fFiALwco4ddvCCsGNrgRwTuE1aCBxG1k" />
+
+    <meta property="og:title" content="AppSheet : mobile apps from spreadsheets : Create App Shortcut" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="AppSheet" />
+
+        <meta name="robots" content="noindex, follow">
+
+
+    <link rel="shortcut icon" href="/Content/img/Favicon-Material.png" sizes="16x16" />
+    <link rel="shortcut icon" href="/Content/img/Favicon-Material.png" sizes="32X32" />
+
+        <!-- Reskinned stylesheet -->
+<link href="https://storage.googleapis.com/appsheet-prod-frontend-assets/80e9c918ec638549dbae1f95d0ce04d54324fb8e3180a78f10562e7554044aac" rel="stylesheet" type="text/css" media="screen, print" />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+        <link rel="stylesheet" href="/Content/css/instantsearch-1.12.1.min.css">
+
+    <!-- Navbar -->
+    <script nonce="8HYmfVQRGI43fNNsMt+fcw==" src="/Content/scripts/web/navbar.js"></script>
+
+    
+    <link href="https://storage.googleapis.com/appsheet-prod-frontend-assets/c188185a443143025cc5b83a8a518d859f31918ff5e0f98b697deb54d1b2c42d" rel="stylesheet" type="text/css" media="screen, print" />
+
+
+
+    <!------------------------ TRACKING ------------------------>
+
+<script nonce="8HYmfVQRGI43fNNsMt+fcw==" src="https://storage.googleapis.com/appsheet-prod-frontend-assets/c25b35beae25c6d0c95a249a9da5cd6dba90d224c425af9f13140fa9f4ca9659" ></script>
+    <script nonce="8HYmfVQRGI43fNNsMt+fcw==">
+    window.JeeneeAnalyticsNewUser = false;
+
+    <!-- Google Tag Manager -->
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+
+        var k = d.createElement(s);
+        k.src = 'https://www.googleoptimize.com/optimize.js?id=OPT-P4M9XQT';
+        f = d.getElementsByTagName(s)[0];
+        f.parentNode.insertBefore(k, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-N6QM4V3');
+    <!-- End Google Tag Manager -->
+    </script>
+    <!-- start Mixpanel -->
+    <script nonce="8HYmfVQRGI43fNNsMt+fcw==" type="text/javascript">
+        (function (f, b) {
+            if (!b.__SV) {
+                var a, e, i, g; window.mixpanel = b; b._i = []; b.init = function (a, e, d) {
+                    function f(b, h) { var a = h.split("."); 2 == a.length && (b = b[a[0]], h = a[1]); b[h] = function () { b.push([h].concat(Array.prototype.slice.call(arguments, 0))) } } var c = b; "undefined" !== typeof d ? c = b[d] = [] : d = "mixpanel"; c.people = c.people || []; c.toString = function (b) { var a = "mixpanel"; "mixpanel" !== d && (a += "." + d); b || (a += " (stub)"); return a }; c.people.toString = function () { return c.toString(1) + ".people (stub)" }; i = "disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+                    for (g = 0; g < i.length; g++) f(c, i[g]); b._i.push([a, e, d])
+                }; b.__SV = 1.2; a = f.createElement("script"); a.type = "text/javascript"; a.async = !0; a.src = "/Content/scripts/_shared/external/mixpanel-2.2.min.js"; e = f.getElementsByTagName("script")[0]; e.parentNode.insertBefore(a, e)
+            }
+        })(document, window.mixpanel || []);
+
+        // Code to manage mixpanel initialization. Calling mixpanel.init is
+        // async and takes a 'loaded' callback argument. The code below creates a window
+        // global object that allows other parts of the code to register callbacks. Callers
+        // should use window.mixpanelLoader.onLoad(cb). Note: this is only implemented for
+        // the AppSheet Web mixpanel instance. TODO: make it work for both mixpanel projects.
+        window.mixpanelLoader = (function () {
+            var callbacks = []
+            var isLoaded = false
+            return {
+                // The method that callers should use
+                onLoad: function (cb) {
+                    if (isLoaded) {
+                        cb()
+                    }
+                    else {
+                        callbacks.push(cb)
+                    }
+                },
+                // The callback that is passed to mixpanel.init
+                loaded: function () {
+                    isLoaded = true
+                    callbacks.forEach(function (cb) {
+                        cb()
+                    })
+                }
+            }
+        })()
+
+        mixpanel.init('6460a5084cbe5c139b2cd70d800f9fa0', { loaded: window.mixpanelLoader.loaded });
+        // Makes the AppSheet bucket accessible via mixpanel.appSheet.track(...)
+        mixpanel.init('6460a5084cbe5c139b2cd70d800f9fa0', {}, "appSheet");
+        // Needed to access the web bucket in a special case for app signups converting app creators
+        mixpanel.init('f3f157a3585cb23361a9ace882b7611e', {}, "web");
+
+    </script>
+    <!-- end Mixpanel -->
+    <script nonce="8HYmfVQRGI43fNNsMt+fcw==" type="text/javascript">
+
+            // http://stackoverflow.com/questions/25851345/tracking-utm-campaign-params-with-mixpanel-as-people-properties
+            function getQueryStrings() {
+                var assoc = {};
+                var decode = function (s) { return decodeURIComponent(s.replace(/\+/g, " ")); };
+                var queryString = location.search.substring(1);
+                var keyValues = queryString.split('&');
+
+                for (var i in keyValues) {
+                    var key = keyValues[i].split('=');
+                    if (key.length > 1) {
+                        assoc[decode(key[0])] = decode(key[1]);
+                    }
+                }
+                return assoc;
+            }
+
+            function addDefaultProperties(properties) {
+                if (properties == null) {
+                    properties = {};
+                }
+                var linkFrom = '';
+                properties.linkedFrom = linkFrom;
+                properties.user = '';
+                return properties
+            }
+
+            function setUTMPropertiesOnUser() {
+                var params = getQueryStrings();
+                for (var i in params) {
+                    var match = /utm_[a-z]+/
+                    if (match.test(i)) {
+                        var value = params[i];
+                        mixpanel.people.set_once(i, value);
+                    }
+                }
+            }
+
+            /**
+             * Checks whether all of the UTM fields are empty in local storage.
+             */
+            function hasNoSetUtmFields() {
+                return (
+                  window.localStorage.getItem('JeeneeNewUserCampaign') == null &&
+                  window.localStorage.getItem('JeeneeNewUserSource') == null &&
+                  window.localStorage.getItem('JeeneeNewUserMedium') == null &&
+                  window.localStorage.getItem('JeeneeNewUserContent') == null &&
+                  window.localStorage.getItem('JeeneeNewUserTerm') == null
+                );
+            }
+
+            /**
+             * Checks for UTM fields in URL params.
+             */
+            function hasUtmFieldsUrlparams(queryParams) {
+                return (
+                  queryParams.hasOwnProperty('utm_campaign') ||
+                  queryParams.hasOwnProperty('utm_source') ||
+                  queryParams.hasOwnProperty('utm_medium') ||
+                  queryParams.hasOwnProperty('utm_content') ||
+                  queryParams.hasOwnProperty('utm_term')
+                );
+            }
+
+            /**
+             * Sets UTM fields to direct/default values in local storage
+             * when none are passed in via the URL upon user's first visit.
+             * utm_content and utm_term are left undefined for direct and organic traffic.
+             */
+            function setDefaultUtmPropertiesOnUserLocalStorage() {
+                window.localStorage.setItem('JeeneeNewUserCampaign', 'direct');
+                window.localStorage.setItem('JeeneeNewUserSource', 'direct');
+                window.localStorage.setItem('JeeneeNewUserMedium', 'none');
+            }
+
+            /**
+             * Sets UTM values in local storage. Only process UTM parameters within the URL when
+             * all of UTM fields in local storage are undefined. This ensures first touch attribution.
+             * utm_campaign, utm_source, and utm_medium are required fields for every campaign, CTA, etc.
+             * Seeing any of these fields as undefined is an indication that there are invalid UTM parameters in the URL.
+             * utm_content and utm_term are optional.
+             */
+            function setUTMPropertiesOnUserLocalStorage() {
+                if (hasNoSetUtmFields()) {
+                    var queryParams = getQueryStrings();
+                    if (hasUtmFieldsUrlparams(queryParams)) {
+                        if (queryParams['utm_campaign'] != null) {
+                            window.localStorage.setItem('JeeneeNewUserCampaign', queryParams['utm_campaign']);
+                        }
+                        if (queryParams['utm_source'] != null) {
+                            window.localStorage.setItem('JeeneeNewUserSource', queryParams['utm_source']);
+                        }
+                        if (queryParams['utm_medium'] != null) {
+                            window.localStorage.setItem('JeeneeNewUserMedium', queryParams['utm_medium']);
+                        }
+                        if (queryParams['utm_content'] != null) {
+                            window.localStorage.setItem('JeeneeNewUserContent', queryParams['utm_content']);
+                        }
+                        if (queryParams['utm_term'] != null) {
+                            window.localStorage.setItem('JeeneeNewUserTerm', queryParams['utm_term']);
+                        }
+                    }
+                    else {
+                        setDefaultUtmPropertiesOnUserLocalStorage();
+                    }
+                }
+            }
+
+            function TrackSimpleConcordEvent(eventName) {
+                if (window.Concord && typeof window.Concord.TrackSimpleEvent === 'function') {
+                    window.Concord.TrackSimpleEvent(eventName);
+                }
+            }
+
+            setUTMPropertiesOnUserLocalStorage();
+
+            /* Only use this function for non-webpack pages. Cannot pass props to Concord using this */
+            window.Track = function (event, properties, callback) {
+                properties = addDefaultProperties(properties)
+                mixpanel.track(event, properties, callback);
+            }
+
+            window.TrackSuperProp = function (properties) {
+                mixpanel.register(properties)
+            }
+
+            window.TrackSuperPropOnce = function (properties) {
+                mixpanel.register_once(properties)
+            }
+
+            window.TrackPeopleProp = function (properties) {
+                mixpanel.people.set(properties)
+            }
+
+            window.TrackTabClick = function (pageName, tabName, properties) {
+                TrackSimpleConcordEvent('Tab Click');
+            }
+
+            window.TrackActionClick = function (pageName, buttonName, properties) {
+                // Need to create an event in EventName for each combo here otherwise it's not very useful
+                // to just know that a user clicked on a button but not what it was
+                TrackSimpleConcordEvent('Button Click ' + pageName + ' ' + buttonName);
+            }
+
+            // Use this function to track user link clicks. You need a special function for this, since
+            // the browser reloads a new page when the user clicks a link, before Mixpanel has a chance to
+            // log the event. The mixpanel.track_links method waits for 300ms before giving up and moving to
+            // the new link. query should be a jquery selector for the links to track. eventName is the event name
+            // passed to mixpanel. properties is either a function of the DOM node that was clicked that returns the
+            // event props, or a constant object of event props.
+            window.TrackLinks = function (query, eventName, properties) {
+                var newProperties;
+                if (typeof properties === 'function') {
+                    // Wrap the function so we get all of the default properites
+                    newProperties = function (node) {
+                        var result = properties(node)
+                        return addDefaultProperties(result)
+                    }
+                }
+                else {
+                    newProperties = addDefaultProperties(properties);
+                }
+                mixpanel.track_links(query, eventName, newProperties);
+            }
+
+
+    </script>
+<!-- Make sure that these go after mixpanel init, always include -->
+<script type="text/javascript" nonce="8HYmfVQRGI43fNNsMt+fcw==">
+    (function () {
+
+        // Utility for running A/B tests on the website. An AB test is defined with a testName and an array of variants.
+        // Each variant consists of a name, a jquery selector, and an initialize function that renders the variant in the website.
+        // When a variant is run, the jquery selector is made visible and the initialize function is called.
+        // The results of the test are saved to mixpanel. The test name is used as a super property in Mixpanel. The value
+        // of the super property is the variant of the test that the user was shown.
+        var ABTest = function (props) {
+
+            this.name = props.name
+            this.variants = props.variants
+            this.defaultVariant = props.variants[0]
+            this.initialized = false
+            this.currentVariant = null
+
+            // We need to know if mixpanel has been loaded and we can access the current user's properties.
+            // You can pass in an onMixpanelLoad callback function, or use the default window.mixpanelLoader.
+            // See _TrackingTop.cshtml for the code that loads mixpanel.
+            if (typeof props.onMixpanelLoad === 'function') {
+                this.onMixpanelLoad = props.onMixpanelLoad
+            }
+            else if (window.mixpanelLoader && typeof window.mixpanelLoader.onLoad === 'function') {
+                this.onMixpanelLoad = window.mixpanelLoader.onLoad
+            }
+            else {
+                this.onMixpanelLoad = function () { }
+            }
+
+            // How long to wait on mixpanel before giving up and showing the default variant
+            this.timeout = 2000
+
+            // Gets the variant of the page for the current user. If they've already been assigned to a variant,
+            // give them that one. Otherwise, assign them to a random variant. Parameter specifiedVariant allows
+            // the caller to ask for a particular variant, without setting mixpanel super props.
+            this.getVariant = function (specifiedVariant) {
+                var variantName = specifiedVariant ? specifiedVariant : mixpanel.get_property(this.name)
+                var variant = this.variants.find(function (v) { return v.name === variantName })
+                if (!variant && !specifiedVariant) {
+                    // The user has not yet beeen assigned to a variant and one has not been specified by caller
+                    variant = this.getRandomVariant()
+                    props = {}
+                    props[this.name] = variant.name
+                    mixpanel.register_once(props)
+                }
+                return variant
+            }
+
+            // Picks a variant uniformly at random
+            this.getRandomVariant = function () {
+                return this.variants[Math.floor(Math.random() * this.variants.length)]
+            }
+
+            this.getVariantSelector = function (variant) {
+                return "." + this.name + "-" + variant.name
+            }
+
+            // Renders the variant to the page
+            this.showVariant = function (variant, callback) {
+
+                // Hide all of the variants.
+                this.hideVariants()
+
+                // Show the dom elements associated with this particular variant
+                $(this.getVariantSelector(variant)).show()
+
+                // Variant definition can supply a callback
+                if (typeof variant.initialize === 'function') {
+                    variant.initialize()
+                }
+
+                // Caller can supply a callback, either a function or an object with keys named
+                // according to the variants
+                if (typeof callback === 'function') {
+                    callback(variant)
+                }
+                else if (typeof callback === 'object' && typeof callback[variant.name] === 'function') {
+                    callback[variant.name](variant)
+                }
+
+                this.currentVariant = variant
+            }
+
+            // Hides any variants that are currently showing in the page
+            this.hideVariants = function () {
+                var tmpThis = this
+                this.variants.forEach(function (variant) {
+                    $(tmpThis.getVariantSelector(variant)).hide()
+                })
+            }
+
+            // Runs with a particular variant, but doesn't actually bucket the user (for debugging)
+            this.runVariant = function (variantName, callback) {
+                var variant = this.getVariant(variantName)
+                this.initialized = true
+                this.showVariant(variant, callback)
+            }
+
+            this.showSpinner = function () {
+                $('.ab-loading.' + this.name).show()
+            }
+
+            this.hideSpinner = function () {
+                $('.ab-loading.' + this.name).hide()
+            }
+
+            // Runs the experiment
+            this.run = function (callback) {
+                var tmpThis = this
+
+                tmpThis.showSpinner()
+
+                // The run method has already been called
+                if (this.currentVariant && this.initialized) {
+                    callback(this.currentVariant)
+                    return
+                }
+
+                // We need to make sure mixpanel is loaded to check whether the user has already been assigned
+                // to a variant.
+                this.onMixpanelLoad(function () {
+                    if (tmpThis.initialized) {
+                        callback(tmpThis.currentVariant)
+                        return
+                    }
+                    tmpThis.initialized = true
+                    var variant = tmpThis.getVariant()
+                    tmpThis.showVariant(variant, callback)
+                    tmpThis.hideSpinner()
+                })
+
+                // Just in case mixpanel doesn't load, we show them the default variant
+                setTimeout(function () {
+                    if (tmpThis.initialized) {
+                        callback(tmpThis.currentVariant)
+                        return
+                    }
+                    tmpThis.initialized = true
+                    tmpThis.showVariant(tmpThis.defaultVariant, callback)
+                    tmpThis.hideSpinner()
+                }, this.timeout)
+
+                return this
+            }
+
+        }
+
+        // Set up a global abTests object that's used to add/run tests in particular pages
+        var tests = []
+        var abTests = {}
+        var menuInitialized = false
+        var isDebug = false
+
+        abTests.addTest = function (props) {
+            tests.push(new ABTest(props))
+        }
+
+        abTests.getTest = function (name) {
+            var test = tests.find(function (t) {
+                return t.name === name
+            })
+            if (test) {
+                return test
+            }
+            else {
+                console.error('Could not find AB test: ' + String(name))
+                return { run: function () { } }
+            }
+        }
+
+        // Functions below allow internal users to select ab test variants. Don't store this state
+        // in mixpanel because mixpanel is not turned on for internal users.
+        var localStorageAvailable = function () {
+            var test = 'test'
+            try {
+                localStorage.setItem(test, test)
+                localStorage.removeItem(test)
+                return true
+            } catch (e) {
+                return false
+            }
+        }
+
+        abTests.setSelectedVariant = function (testName, variantName) {
+            if (!localStorageAvailable()) return
+            localStorage.setItem(testName, variantName)
+        }
+
+        abTests.loadSelectedVariant = function (testName) {
+            if (!localStorageAvailable()) return
+            var variantName = localStorage.getItem(testName)
+            if (variantName) {
+                return variantName
+            }
+            else {
+                return
+            }
+        }
+
+        var highlightMenuVariant = function (testName, callback) {
+            return function (variant) {
+                callback(variant)
+                if (isDebug) {
+                    $('.ab-menu-root .ab-test-name').filter(function () {
+                        return $(this).data('name') === testName
+                    })
+                    .find('.ab-test-variant-name').each(function () {
+                        var thisVariant = $(this).data() || {}
+                        if (thisVariant.name === variant.name) {
+                            $(this).addClass('ab-menu-highlight')
+                        }
+                    })
+                }
+            }
+        }
+
+        abTests.runTest = function (name, callback) {
+            // Check to see if there's a selected variant to override default ab behavior
+            var selectedVariant = abTests.loadSelectedVariant(name)
+
+            // Update the menu to display ab info
+            if (!menuInitialized) abTests.initializeMenu()
+            abTests.addToMenu(name)
+            var newCallback = highlightMenuVariant(name, callback)
+
+            if (selectedVariant) {
+                return abTests.runTestVariant(name, selectedVariant, newCallback)
+            }
+            else {
+                return abTests.getTest(name).run(newCallback)
+            }
+        }
+
+        abTests.runTestVariant = function (name, variantName, callback) {
+            var newCallback = highlightMenuVariant(name, callback)
+            return abTests.getTest(name).runVariant(variantName, newCallback)
+        }
+
+        abTests.initializeMenu = function () {
+            // Only initialize menu if in debug mode
+            if (!isDebug) return
+            var $menu = $('#ab-menu')
+            if ($menu.length != 1) return
+            $menu.show()
+            var $root = $('.ab-menu-root')
+            $root.hide()
+            $('#ab-menu').find('.title').on('click', function () {
+                $root.toggle()
+            })
+            menuInitialized = true
+        }
+
+        abTests.addToMenu = function (testName) {
+            if (!menuInitialized || !isDebug) return
+            var test = abTests.getTest(testName)
+            if (!test) return
+            var $root = $('.ab-menu-root')
+            var $testRoot = $('<li class="ab-test-name">' + testName + '</li>')
+            $testRoot.data({name: testName})
+            $testRoot.appendTo($root)
+            test.variants.forEach(function (variant) {
+                var $variant = $('<li class="ab-test-variant-name"><a class="link" href="#">' + variant.name + '</a></li>')
+                $variant.data(variant)
+                $variant.appendTo($testRoot)
+                $variant.find('a').on('click', function(e) {
+                    e.preventDefault()
+                    abTests.setSelectedVariant(testName, variant.name)
+                    location.reload()
+                })
+            })
+        }
+
+        window.abTests = abTests
+
+        /* leaving this here as an example
+        abTests.addTest({
+            name: 'abSpecClickableHints',
+            variants: [
+                {
+                    name: 'Clickable',
+                    useHintLinks: true
+                },
+                {
+                    name: 'Not Clickable',
+                    useHintLinks: false
+                }
+            ]
+        })
+        */
+
+    })()
+
+</script>
+
+
+<!------------------------ END TRACKING ------------------------>
+
+
+    
+
+    <link rel="stylesheet" type="text/css" href="/Content/css/cookieconsent2-3.1.0.min.css" />
+
+</head>
+
+<body id="shortcut" class="gsuite-root">
+    <div class="bodyWrapper">
+        <!-- Hidden logo to show up on links to page -->
+        <img src="/Content/img/logo/material/logomark.png" alt="" class="hidden" style="display: none;" />
+
+        <script nonce="8HYmfVQRGI43fNNsMt+fcw==">
+            var verifiedAjaxPost = function (options) {
+                if (!options.headers) {
+                    options.headers = {}
+                }
+                options.headers.RequestVerificationToken = 'hEVEA5UV70ZiQvi2SY8c3ILbtGhRtgLi7yC1IZvG_J8RiMILll1tUOkK35y7185zziciL2lLCrU6wrpW1Lb9LjAgDwgTv5LAoR7tkjPbbBrcuwFkDycY-7unfN5YPETYaRNmvaGNU4cmdTnDJaQrQQ2:GDWcJmdnJ9gvn-n1VRPMY3E6RMR2p2E12hancfTRacBgZAq8azPLr3J-QfT10vtRWmYtspEBPDMbpuvwgtL0Wo_XUfZqZlAlcTLIgA9asf8pjdA6rnW0mSfi0K-PAeV4y35AVqVJBrmK3cMhwhBfLg2'
+                options.method = 'POST'
+
+                return $.ajax(options)
+            }
+            window.verifiedAjaxPost = verifiedAjaxPost
+            var reloadPage = function (nonce) {
+                // if there is already a nonce=, remove it
+                var currentSearch = window.location.search
+                var currentSearchSplit = currentSearch.split("&nonce=")
+                if (currentSearchSplit.length > 1) {
+                    currentSearchSplit[1] = ""
+                    currentSearch = currentSearchSplit.join("")
+                }
+                window.location.search = currentSearch + "&nonce=" + (nonce ? nonce : Math.random())
+            }
+            // GLOBALS
+            window.DEBUG_MODE = false
+            window.ALLOW_DEBUG_LOGGING = false
+
+            window.getUserId = function () {
+              return '-1'
+            }
+
+          window.hasRolloutByUserId = (function () {
+          const rollouts = new Set(
+            ["WaitStepTimeout","FSImageUrlSigningFrontEndRollout","NewMonitoringAppRollout","DataSchemaExplorer","FetchMoreGoogleGroups"]
+          );
+
+          return function (rolloutName) { return rollouts.has(rolloutName); }
+          })();
+        </script>
+
+<!-- Messages when creating or cloning apps -->
+<div id="cloningClickEater">
+    <div id="waitingClone">
+        <div class="loader">Loading...</div>
+        <p>We're setting up your new app...</p>
+    </div>
+    <div id="errorClick">
+        <div id="errorModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close AlwaysEditable" data-dismiss="modal"><i class="material">cancel</i></button>
+                        <h5 class="modal-title">Error Cloning App</h5>
+                    </div>
+                    <div id="modalErrorText" class="modal-body"></div>
+                    <div class="modal-footer">
+                        <button id="dismissModal" type="button" class="btn btn-default AlwaysEditable" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+
+            <header class="topNav">
+
+
+
+<div class="primaryNav">
+    <div class="logo">
+        <a href="/">
+            <img class="material-logo" src=https://www.appsheet.com/content/img/material/logo.svg /> 
+            <span class="logo-text">
+                AppSheet
+            </span>
+            <span class="subscriptionType"></span>
+        </a>
+    </div>
+        <nav>
+            <div class="navicon">
+                <i class="material clickable">arrow_drop_down</i>
+            </div>
+            <ul class="non-mobile">
+
+                            <li class="createanapp ">
+                    <a href="https://solutions.appsheet.com/how-to-create-an-app" data-label="createanapp" rel="" target="">
+                        <span>
+                            How to create an app
+                                                                                </span>
+                    </a>
+
+            </li>
+            <li class="howitworks ">
+                    <a href="https://solutions.appsheet.com/application-platform" data-label="howitworks" rel="" target="">
+                        <span>
+                            Platform
+                                                                                </span>
+                    </a>
+
+            </li>
+            <li class="pricing ">
+                    <a href="https://solutions.appsheet.com/pricing" data-label="pricing" rel="" target="">
+                        <span>
+                            Pricing
+                                                                                </span>
+                    </a>
+
+            </li>
+            <li class="apps ">
+                    <a href="/templates" data-label="apps" rel="" target="">
+                        <span>
+                            Templates
+                                                                                </span>
+                    </a>
+
+            </li>
+            <li class="enterprise ">
+                    <a href="https://solutions.appsheet.com/appsheet-enterprise" data-label="enterprise" rel="" target="">
+                        <span>
+                            Enterprise
+                                                                                </span>
+                    </a>
+
+            </li>
+            <li class="solutions ">
+                    <a href="https://solutions.appsheet.com/get-it-done" data-label="solutions" rel="" target="">
+                        <span>
+                            Solutions
+                                                                                </span>
+                    </a>
+
+            </li>
+            <li class="blog ">
+                    <a href="https://blog.appsheet.com/" data-label="blog" rel="" target="">
+                        <span>
+                            Blog
+                                                                                </span>
+                    </a>
+
+            </li>
+            <li class="login ">
+                    <a href="/Account/Login" data-label="login" rel="" target="">
+                        <span>
+                            Login
+                                                                                </span>
+                    </a>
+
+            </li>
+            <li class="signup ">
+                    <a href="/Home/Start" data-label="signup" rel="" target="">
+                        <span>
+                            Start for free
+                                                                                </span>
+                    </a>
+
+            </li>
+
+            </ul>
+            <ul class="mobile">
+
+                            <li class="createanapp ">
+                    <a href="https://solutions.appsheet.com/how-to-create-an-app" data-label="createanapp" rel="" target="">
+                        <span>
+                            How to create an app
+                                                                                </span>
+                    </a>
+
+            </li>
+            <li class="howitworks ">
+                    <a href="https://solutions.appsheet.com/application-platform" data-label="howitworks" rel="" target="">
+                        <span>
+                            Platform
+                                                                                </span>
+                    </a>
+
+            </li>
+            <li class="pricing ">
+                    <a href="https://solutions.appsheet.com/pricing" data-label="pricing" rel="" target="">
+                        <span>
+                            Pricing
+                                                                                </span>
+                    </a>
+
+            </li>
+            <li class="apps ">
+                    <a href="/templates" data-label="apps" rel="" target="">
+                        <span>
+                            Templates
+                                                                                </span>
+                    </a>
+
+            </li>
+            <li class="enterprise ">
+                    <a href="https://solutions.appsheet.com/appsheet-enterprise" data-label="enterprise" rel="" target="">
+                        <span>
+                            Enterprise
+                                                                                </span>
+                    </a>
+
+            </li>
+            <li class="solutions ">
+                    <a href="https://solutions.appsheet.com/get-it-done" data-label="solutions" rel="" target="">
+                        <span>
+                            Solutions
+                                                                                </span>
+                    </a>
+
+            </li>
+            <li class="blog ">
+                    <a href="https://blog.appsheet.com/" data-label="blog" rel="" target="">
+                        <span>
+                            Blog
+                                                                                </span>
+                    </a>
+
+            </li>
+            <li class="login ">
+                    <a href="/Account/Login" data-label="login" rel="" target="">
+                        <span>
+                            Login
+                                                                                </span>
+                    </a>
+
+            </li>
+            <li class="signup ">
+                    <a href="/Home/Start" data-label="signup" rel="" target="">
+                        <span>
+                            Start for free
+                                                                                </span>
+                    </a>
+
+            </li>
+
+            </ul>
+        </nav>
+</div>
+
+
+            </header>
+
+        <main>
+
+            
+
+
+<div class="install-app-page">
+
+    <header>
+        <img style="border-radius: 16px;" src="https://www.appsheet.com:443/fsimage.png?appid=c92aea0f-527d-4f45-9cbc-96cea724e685&amp;datasource=google&amp;filename=DocId%3d1iAK4tG7Uyomw_flmmvapZCVr6jzyJNpK&amp;signature=c8f0b3da15a489ffaf27acc7d7f13f752ea802ef5e081b2ba7c91ca77e7a8d15&amp;tableprovider=google&amp;userid=5085133&amp;width=124&amp;height=124">
+    </header>
+
+    <section class="invitation">
+        <h3>SneakinDeals</h3>
+        <div class="body2">alimbest8020@gmail.com has invited you to use their app</div>
+    </section>
+    <section class="install-app-link">
+        <div class="body2">Visit this page on your mobile device to install:</div>
+        <input id="shortcut" value="https://appsheet.com/newshortcut/c92aea0f-527d-4f45-9cbc-96cea724e685"/>
+    </section>
+    <section class="preview-app">
+        <a href="https://appsheet.com/start/c92aea0f-527d-4f45-9cbc-96cea724e685" target="_blank" class="button runButton" rel="noopener noreferrer">
+            Preview App in Browser
+        </a>
+    </section>
+
+</div>
+
+
+
+                <div class="modal" id="deleteAccountModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="AlwaysEditable cancel" data-dismiss="modal">Cancel</button>
+                                <h5 class="modal-title">
+                                    Delete my account
+                                </h5>
+                            </div>
+                            <form>
+                                <div class="modal-body">
+                                    <p>We're sorry to see you go! Why are you leaving?</p>
+                                    <p>
+                                        <fieldset>
+                                            <div>
+                                                <input name="deleteAccountReason" type="radio" value="too hard" id="too-hard" style="width:auto;margin-right:10px" /><label for="too-hard" style="display:inline">It's too hard to figure out</label>
+                                            </div>
+                                            <div>
+                                                <input name="deleteAccountReason" type="radio" value="unmet needs" id="unmet-needs" style="width:auto;margin-right:10px" /><label for="unmet-needs" style="display:inline">It doesn't do what I need it to do</label>
+                                            </div>
+                                            <div>
+                                                <input name="deleteAccountReason" type="radio" value="just browsing" id="just-browsing" style="width:auto;margin-right:10px" /><label for="just-browsing" style="display:inline">I was just browsing</label>
+                                            </div>
+                                            <div>
+                                                <input name="deleteAccountReason" type="radio" value="other" id="other" style="width:auto;margin-right:10px" /><label for="other" style="display:inline">Other</label>
+                                            </div>
+                                        </fieldset>
+                                    </p>
+                                    <p>
+                                        <label for="delete-account-comment">Please tell us what we should improve<textarea rows="4" name="deleteAccountComment" id="delete-account-comment"></textarea></label>
+                                    </p>
+                                    <p>
+                                        <a href="https://help.appsheet.com/en/articles/962254-resetting-appsheet" class="link clear-devices-help-link">
+                                            Deletion of this account will not delete the apps or app data already downloaded to app users' devices.
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="modal-footer" style="overflow:auto">
+                                    <button type="submit">Delete my account</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </main>
+
+
+    <footer class="bottomNav">
+<nav>
+        <ul>
+                    <li class="company">
+                        <div class="subheader1"><a href="https://solutions.appsheet.com/about">Company</a></div>
+                            <ul>
+                                        <li class="about ">
+                                            <a href="https://solutions.appsheet.com/about">About</a>
+                                        </li>
+                                        <li class="blog ">
+                                            <a href="http://blog.appsheet.com/">Blog</a>
+                                        </li>
+                                        <li class="careers ">
+                                            <a href="https://solutions.appsheet.com/careers">Careers</a>
+                                        </li>
+                                        <li class="contactus ">
+                                            <a href="/Support/Contact">Contact us</a>
+                                        </li>
+                            </ul>
+                    </li>
+                    <li class="howitworks">
+                        <div class="subheader1"><a href="https://solutions.appsheet.com/application-platform">Platform</a></div>
+                            <ul>
+                                        <li class="box ">
+                                            <a href="/HowItWorks/Architecture">Architecture</a>
+                                        </li>
+                                        <li class="datasource ">
+                                            <a href="/HowItWorks/DataSources">Data Sources</a>
+                                        </li>
+                                        <li class="enterprise ">
+                                            <a href="https://solutions.appsheet.com/appsheet-enterprise">Enterprise</a>
+                                        </li>
+                                        <li class="trustCenter ">
+                                            <a href="https://solutions.appsheet.com/trust-center">Trust Center</a>
+                                        </li>
+                            </ul>
+                    </li>
+                    <li class="pricing">
+                        <div class="subheader1"><a href="https://solutions.appsheet.com/pricing">Pricing</a></div>
+                            <ul>
+                                        <li class="terms ">
+                                            <a href="/Home/Terms">Terms of service</a>
+                                        </li>
+                                        <li class="privacy ">
+                                            <a href="https://policies.google.com/privacy">Privacy policy</a>
+                                        </li>
+                                        <li class="sales ">
+                                            <a href="https://solutions.appsheet.com/contact">Contact sales</a>
+                                        </li>
+                            </ul>
+                    </li>
+                    <li class="solutions">
+                        <div class="subheader1"><a href="https://solutions.appsheet.com/get-it-done">Solutions</a></div>
+                            <ul>
+                                        <li class="apps ">
+                                            <a href="/templates">Templates</a>
+                                        </li>
+                                        <li class="resources ">
+                                            <a href="https://solutions.appsheet.com/get-it-done#section3-outer-wrap">Resources</a>
+                                        </li>
+                                        <li class="industries ">
+                                            <a href="/Solutions#industries">Industries</a>
+                                        </li>
+                                        <li class="customers ">
+                                            <a href="https://blog.appsheet.com/topic/customers">Customers</a>
+                                        </li>
+                            </ul>
+                    </li>
+                    <li class="partners">
+                        <div class="subheader1"><a href="/Partners">Partners</a></div>
+                            <ul>
+                                        <li class="findapartner ">
+                                            <a href="https://solutions.appsheet.com/partners/get-partner-help">Find a partner</a>
+                                        </li>
+                                        <li class="becomeapartner ">
+                                            <a href="https://solutions.appsheet.com/partners/become-an-appsheet-partner">Become a partner</a>
+                                        </li>
+                            </ul>
+                    </li>
+                    <li class="support">
+                        <div class="subheader1"><a href="/Support">Support</a></div>
+                            <ul>
+                                        <li class="community ">
+                                            <a href="https://community.appsheet.com">Community</a>
+                                        </li>
+                                        <li class="documentation ">
+                                            <a href="https://help.appsheet.com/">Documentation</a>
+                                        </li>
+                                        <li class="contactus ">
+                                            <a href="/Support/Contact">Contact Us</a>
+                                        </li>
+                            </ul>
+                    </li>
+                    <li class="account">
+                        <div class="subheader1"><a href="/Template/Apps">Account</a></div>
+                            <ul>
+                                        <li class="login ">
+                                            <a href="/Account/Login">Login</a>
+                                        </li>
+                                        <li class="signup ">
+                                            <a href="/Home/Start">Start for free</a>
+                                        </li>
+                            </ul>
+                    </li>
+        </ul>
+
+        <div class="bottom-meta">
+            <div class="socialMedia" itemscope itemtype="http://schema.org/Organization">
+                <link itemprop="url" href="https://www.appsheet.com">
+                    <a href="https://www.youtube.com/channel/UC7xYEO2O_VZWyvctU0LQp8g" itemprop="sameAs">
+                        <i class="material">post_youtube</i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/appsheet" itemprop="sameAs">
+                         <i class="material">post_linkedin</i>
+                    </a>
+                    <a href="https://twitter.com/appsheet" itemprop="sameAs">
+                        <i class="material">post_twitter</i>
+                    </a>
+                    <a href="https://www.facebook.com/appsheet" itemprop="sameAs">
+                        <i class="material">post_facebook</i>
+                    </a>
+            </div>
+        </div>
+    </nav>
+    </footer>
+
+        <!-- SCRIPTS -->
+
+<script nonce="8HYmfVQRGI43fNNsMt+fcw==" src="/Scripts/jquery-3.5.1.min.js"></script>
+<script nonce="8HYmfVQRGI43fNNsMt+fcw==" src="/Scripts/jquery-migrate-3.3.2.min.js"></script>
+
+<script nonce="8HYmfVQRGI43fNNsMt+fcw==" src="/bundles/valjquery"></script>
+
+<script nonce="8HYmfVQRGI43fNNsMt+fcw==" src="/bundles/unobtrusive?v=lWgf8_nB9MzU3N1ztusS2nnyZp9GZERS2J1NvX37gZo1"></script>
+
+
+<!-- Various utilities (modals, tooltips, etc.) -->
+<script nonce="8HYmfVQRGI43fNNsMt+fcw==" src="/Content/scripts/web/utilities.js?update=&#39;20211118&#39;.1"></script>
+
+
+<script nonce="8HYmfVQRGI43fNNsMt+fcw==" src="/Content/scripts/web/accountStartup.js">
+</script>
+
+<script nonce="8HYmfVQRGI43fNNsMt+fcw==" type="text/javascript">
+$(function () {
+    var shouldCheck = false;
+    if (shouldCheck)
+    {
+        var oneHour = 60 * 60 * 1000;
+        initCheckAccountStatus(oneHour);
+    }
+});
+
+</script>
+
+        
+    <script nonce="8HYmfVQRGI43fNNsMt+fcw==" type="text/javascript">
+        var appName = 'Sneakin_catalog_11_2021-5085133';
+        var appId = 'c92aea0f-527d-4f45-9cbc-96cea724e685';
+
+        $(function () {
+            if ('function' == typeof initInviteUsers) {
+                initInviteUsers();
+            }
+
+            <text>
+            document.getElementById('shortcut').addEventListener('click', function(ev) {
+                ev.target.select()
+            })
+            </text>
+        });
+    </script>
+
+
+        <!-- MORE TRACKING -->
+            <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6QM4V3"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+
+        
+                <script id="CookieConsent" nonce="8HYmfVQRGI43fNNsMt+fcw==" src="/Content/scripts/_shared/external/cookieconsent2-3.1.0.min.js" async defer></script>
+                <script nonce="8HYmfVQRGI43fNNsMt+fcw==">
+                    window.showCookieConsent = function () {
+                        window.cookieconsent.initialise({
+                            "palette": {
+                                "popup": {
+                                    "background": "#ffffff",
+                                    "text": "#3C4043"
+                                },
+                                "button": {
+                                    "background": "#1A73E8",
+                                    "text": "#ffffff"
+                                }
+                            },
+                            "position": "bottom-left",
+                            "content": {
+                                "message": "This website uses cookies to ensure you get the best experience with our platform.",
+                                "dismiss": "Got it!",
+                                "link": "Learn more",
+                                "href": "https://www.appsheet.com/Home/Privacy"
+                            },
+                            "cookie": {
+                                "domain": ".appsheet.com",
+                                "secure": true,
+                            },
+                        })
+                    };
+                    $('#CookieConsent').on('load', showCookieConsent)
+                </script>
+
+    </div>
+
+</body>
+</html>
